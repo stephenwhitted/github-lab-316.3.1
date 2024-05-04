@@ -1,61 +1,68 @@
 * {
     box-sizing: border-box;
-  }
-  
-  /* CSS Custom Properties */
-  :root {
-    --main-bg: #4a4e4d;
-    --top-menu-bg: #0e9aa7;
-    --sub-menu-bg: #3da4ab;
-  }
-  
-  body {
+}
+
+:root {
+    --main-bg: #333333; 
+    --top-menu-bg: #00A6A6; 
+    --sub-menu-bg: #00B7B7; 
+}
+
+body {
     font-family: Tahoma, Geneva, sans-serif;
     height: 100vh;
     margin: 0;
     display: grid;
     grid-template-rows: 3rem auto;
     color: white;
-  }
-  
-  .flex-ctr {
+    background-color: var(--main-bg); 
+}
+
+.flex-ctr {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .flex-around {
+}
+
+.flex-around {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-  
-  nav a {
+}
+
+nav a {
     line-height: 3rem;
     padding: 0 1rem;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-  }
-  
-  #top-menu a:hover {
+    font-weight: bold; 
+}
+
+#top-menu a:hover {
     background-color: var(--sub-menu-bg);
-  }
-  header, #top-menu {     /*316.3.1 (Part 2) */
-	position: relative;
 }
+
+header, #top-menu {
+    position: relative;
+}
+
 #top-menu {
-	z-index: 20;
+    z-index: 20;
+    background-color: var(--top-menu-bg); 
 }
+
 #sub-menu {
-	width: 100%;
-	z-index: 10;
-	transition: top 0.5s ease-out;
+    width: 100%;
+    z-index: 10;
+    transition: top 0.5s ease-out;
 }
+
 #sub-menu a:hover {
-	background-color: var(--top-menu-bg);
+    background-color: var(--top-menu-bg);
 }
+
 nav a.active {
-	background-color: var(--sub-menu-bg);
-	color: var(--main-bg);
+    background-color: var(--sub-menu-bg);
+    color: var(--main-bg);
 }
