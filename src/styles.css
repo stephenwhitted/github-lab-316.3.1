@@ -15,7 +15,7 @@ body {
     display: grid;
     grid-template-rows: 3rem auto;
     color: white;
-    background-color: var(--main-bg); 
+    background-color: var(--main-bg);
 }
 
 .flex-ctr {
