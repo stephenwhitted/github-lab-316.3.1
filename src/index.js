@@ -30,3 +30,18 @@ menuLinks.forEach((link)) => (
     a.textContent = link.text;
     topMenuEL.appendChild(a);
 ));
+
+//////// ALAB 316.3.1 (Part 2) Lab Begins////////////////////////////////////////
+
+
+const subMenuEl = document.getElementById("sub-menu");
+subMenuEl.style.height = "100%";
+subMenuEl.style.backgroundColor = "var(--sub-menu-bg)";
+subMenuEl.classList.add("flex-around");
+
+
+subMenuEl.style.position = "absolute";
+subMenuEl.style.top = "0"; 
+subMenuEl.style.right = "-100%"; 
+
+
